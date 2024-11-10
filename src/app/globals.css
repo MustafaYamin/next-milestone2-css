@@ -2,26 +2,385 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #e4e5ec;
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.logo {
+  background-color: black;
+  display: inline;
+  margin-left: 5rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(0, 23, 73);
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  background: rgb(0, 23, 73);
+  gap: 3rem;
+  margin-right: 9rem;
+}
+
+.nav-link {
+  background: rgb(0, 23, 73);
+}
+
+.links {
+  background: rgb(0, 23, 73);
+  color: white;
+  font-size: large;
+}
+
+.links:active {
+  color: rgb(168, 195, 255);
+}
+
+.home {
+  display: flex;
+  margin-top: 9rem;
+}
+
+.home-container {
+  margin-left: 1.5rem;
+}
+
+.main-head {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 1.75rem;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  width: auto;
+}
+
+.hm-cnt-txt {
+  padding-bottom: 2.25rem;
+}
+
+.home-img {
+  width: 100%;
+  border-radius: 9999px;
+  margin-right: 5rem;
+  margin-left: 2.25rem;
+}
+.headings {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 1.25rem;
+  margin-top: 1.75rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.sub-headings {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+/* About */
+.about {
+  display: flex;
+  margin-top: 9rem;
+}
+
+.about-container {
+  margin-left: 1.5rem;
+}
+
+.my-v-text {
+  padding-bottom: 2.25rem;
+}
+
+.about-img {
+  width: 90%;
+  border-radius: 9999px;
+  margin-right: 3rem;
+  margin-left: 1rem;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  margin-top: 9rem;
+}
+
+.skills-container {
+  margin-left: 1.5rem;
+  width: 85%;
+  padding-bottom: 2.5rem;
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7252f3;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-container {
+  width: 60%;
+
+  height: 90vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-top: 10rem;
+  box-shadow: 0rem 1rem 3rem 0;
+  flex-direction: column;
+  margin-bottom: 9rem;
+}
+
+.cont-head {
+  background: transparent;
+  margin-top: 5.5rem;
+  font-size: xx-large;
+  position: relative;
+  top: -6.5rem;
+  margin-left: 25rem;
+
+  display: flex;
+}
+
+.cont-img {
+  background: transparent;
+}
+
+.form {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-right: 7rem;
+  position: relative;
+  top: -3rem;
+}
+
+.contact-contant {
+  display: flex;
+  background: transparent;
+  justify-content: space-between;
+}
+
+.plane-img {
+  background: transparent;
+  margin-left: 5rem;
+  width: 20rem;
+}
+
+.form-label {
+  font-size: larger;
+  background: transparent;
+}
+
+.form-input {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  padding-left: 0.5rem;
+  background: #f6f6f6;
+  border: 1px solid rgba(198, 191, 191, 0.793);
+}
+
+.form-msg {
+  width: 22rem;
+  height: 6rem;
+  border-radius: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+.cont-btn {
+  width: 7rem;
+  height: 3rem;
+  color: white;
+  background: #7252f3;
+  border-radius: 1rem;
+}
+
+.cont-btn:active {
+  background: #9d89ea;
+}
+
+/* Medium screens (tablets in portrait and large phones) */
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 1rem;
+  }
+
+  .navbar {
+    height: 5.95rem;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    margin-right: 3.5rem;
+  }
+
+  .links {
+    font-size: medium;
+  }
+
+  .plane-img {
+    display: none;
+  }
+
+  .contact-container {
+    width: 60%;
+    height: 110vh;
+    margin-bottom: 9rem;
+  }
+
+  .cont-head {
+    margin-top: 3rem;
+    font-size: xx-large;
+    position: relative;
+    margin-left: 9.5rem;
+    top: -3rem;
+    display: flex;
+  }
+
+  .form-label {
+    margin-left: 3rem;
+    padding-top: 1.75rem;
+  }
+
+  .form-input {
+    margin-left: 3rem;
+    padding-top: 1.5rem;
+  }
+  .form-msg {
+    margin-left: 3rem;
+    padding-top: 1.5rem;
+  }
+
+  .cont-btn {
+    width: 22rem;
+
+    margin-left: 3.25rem;
+    margin-top: 2rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 600px) {
+  .logo {
+    margin-left: 0;
+  }
+
+  .navbar {
+    height: 5.95rem;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    margin-right: 1rem;
+  }
+
+  .contact-container {
+    width: 70%;
+  }
+
+  .cont-head {
+    margin-left: 8rem;
+  }
+
+  .form-label {
+    margin-left: 2rem;
+  }
+
+  .form-input {
+    margin-left: 2rem;
+    padding-top: 0.5rem;
+  }
+
+  .form-msg {
+    margin-left: 2rem;
+    padding-top: 0.5rem;
+    width: 15rem;
+  }
+
+  .cont-btn {
+    width: 22rem;
+
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .about-img {
+    width: 50rem;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (max-width: 500px) {
+  .navbar {
+    height: 7rem;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 2.5rem;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .contact-container {
+    height: 85vh;
+    width: 90%;
+  }
+
+  .cont-head {
+    margin-left: 4.5rem;
+  }
+
+  .cont-btn {
+    width: 12rem;
+    margin-left: 3.25rem;
+  }
+  .home {
+    display: flex;
+    justify-content: center;
+  }
+  .home-img {
+    display: none;
+    padding-right: 2rem;
+  }
+  .about-img {
+    display: none;
   }
 }

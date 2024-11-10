@@ -1,101 +1,70 @@
-import Image from "next/image";
-
+import MustafaImg1 from "./components/mustafa-Image/mustafa1";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <div className=" home ">
+        <div className=" home-container ">
+          <div className=" main-head ">Mustafa Yamin</div>
+          <div className="text ">
+            Hi there! I'm Mustafa Yamin, a passionate AI developer and frontend
+            web developer with an ambition for bringing creative ideas to life.
+            With experience in developing innovative solutions for NASA Space
+            Apps Challenge, and coordinating sessions at Stream Academy
+            International, I thrive in dynamic environments that push the
+            boundaries of technology and creativity. I specialize in frontend
+            web design, and currently pursuing my BBA at FUUAST and enhancing my
+            skills in advanced web technologies at GIAIC. Whether it's building
+            sleek, user-friendly websites or diving deep into the world of
+            artificial intelligence, I'm always eager to take on exciting
+            projects.
+          </div>
+          <div className="headings">What I Do</div>
+         
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="sub-headings">
+            Stream Coordinator at Stream Academy International
+          </div>
+          <div className=" text ">
+            At Stream Academy International, I serve as a Stream Coordinator,
+            where I play a pivotal role in organizing and conducting educational
+            sessions focused on technology and innovation. In this position, I
+            facilitate hands-on learning experiences for students, helping them
+            explore various tech concepts and develop essential skills for the
+            future. My responsibilities include designing engaging curricula,
+            collaborating with educators and industry professionals, and
+            mentoring students as they navigate their learning journeys. By
+            fostering an inclusive and inspiring environment, I aim to empower
+            learners to embrace technology and realize their potential in an
+            ever-evolving digital landscape.
+          </div>
+          <div className="sub-headings">Volunteer at Mommyology</div>
+          <div className=" text ">
+            As a volunteer at Mommyology, I had the incredible opportunity to
+            engage with children through nature-focused educational events. My
+            role involved designing and facilitating interactive activities that
+            encouraged exploration and hands-on learning about the environment.
+            By creating a fun and supportive atmosphere, I aimed to inspire
+            curiosity and a love for nature in young learners. This experience
+            not only allowed me to contribute to the community but also
+            reinforced my belief in the power of education to foster creativity
+            and awareness in children.
+          </div>
+          <div className=" headings  ">Let's Connect</div>
+          <div className=" hm-cnt-txt text  ">
+            I'm always excited to connect with fellow developers, educators, and
+            anyone passionate about technology and learning. Whether you're
+            interested in collaborating on web projects, exploring innovative
+            educational initiatives, or simply want to share ideas and insights,
+            I'd love to hear from you!
+            <br />
+            Feel free to reach out to me via email at mustafayamin5@gmail.com or
+            connect with me on LinkedIn. I'm open to discussing opportunities,
+            providing assistance with frontend development, or exchanging
+            knowledge about best practices in web design and education.
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <MustafaImg1 />
+      </div>
     </div>
   );
 }
